@@ -1,139 +1,70 @@
-# Maple Meadows Baseball
-This is the website for the Maple Meadows baseball team.
+# Getting Started with Create React App
 
-# SQL Queries to get started
-CREATE TABLE `schedule` (
-  `ScheduleID` INT AUTO_INCREMENT,
-  `GameDate` VARCHAR(50),
-  `GameTime` VARCHAR(20),
-  `Opponent` VARCHAR(50),
-  `HomeAway` CHAR(4),
-  PRIMARY KEY (`ScheduleID`)
-);
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-CREATE TABLE `adminusers` (
-  `id` INT AUTO_INCREMENT,
-  `username` VARCHAR(255),
-  `password` VARCHAR(255),
-  PRIMARY KEY (`id`)
-)
+## Available Scripts
 
-CREATE TABLE `users` (
-  `id` INT AUTO_INCREMENT,
-  `username` VARCHAR(255),
-  `password` VARCHAR(255),
-  PRIMARY KEY (`id`)
-);
+In the project directory, you can run:
 
-CREATE TABLE `videos` (
-  `VideoID` INT AUTO_INCREMENT,
-  `VideoPath` VARCHAR(100),
-  PRIMARY KEY (`VideoID`)
-);
+### `npm start`
 
-CREATE TABLE `livestream` (
-  `url` VARCHAR(255)
-);
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-CREATE TABLE `players` (
-  `PlayersID` INT AUTO_INCREMENT,
-  `PlayerName` VARCHAR(25),
-  `PlayerPosition` VARCHAR(25),
-  `PlayerNumber` VARCHAR(25),
-  `PlayerYear` VARCHAR(25),
-  `ImagePath` VARCHAR(100),
-  `AB` INT,
-  `PA` INT,
-  `AVG` VARCHAR(5),
-  `OBP` VARCHAR(5),
-  `SLG` VARCHAR(5),
-  `H` INT,
-  `1B` INT,
-  `2B` INT,
-  `3B` INT,
-  `HR` INT,
-  `RBI` INT,
-  `SB` INT,
-  `CS` INT,
-  `W` INT,
-  `L` INT,
-  `ERA` VARCHAR(4),
-  `WHIP` VARCHAR(4),
-  `SO` INT,
-  `BB` INT,
-  `BAA` VARCHAR(5),
-  `IP` INT,
-  PRIMARY KEY (`PlayersID`)
-);
+### `npm test`
 
-## /forms
-Contains the website for hosting and downloading PDF forms.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### index.php
-Gives a list of all PDF files in the `/forms/all_forms` directory.
+### `npm run build`
 
-### upload.php
-Admins can upload forms here.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### manage.php
-Admins can delete forms here.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## /images
-Hosts images for the website.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## /PlayerPics
-Hosts images for the players on roster.
+### `npm run eject`
 
-## /PlayerVideos
-Hosts videos for the players on videos page.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## /views 
-Contains the header and footer for the site.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Files in root directory
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### admin-login.php
-Login page to admin console.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### admin.php
-Admin console. Contains calendar, announcement, livestream, player videos and player stat editor. Only availabe to admin users.
+## Learn More
 
-### adminregister.php
-Admin users can register other admin users here.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### config.php
-Contain database variables for site connectivity.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### getplayer.php
-Gets player information from the DB.
+### Code Splitting
 
-### index.php
-Main page of the website. Shows announcements and livestream.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Login.php
-Login page for normal users to see videos.
+### Analyzing the Bundle Size
 
-### logout.php
-Logs out of the session and redirects to index.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### playeredit.js
-Dynamically shows players stats from the db to the admin page.
+### Making a Progressive Web App
 
-### Register.php
-Admin users can register normal users here.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### reset-password.php
-Password reset page.
+### Advanced Configuration
 
-### Roster.php
-Roster for the team.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Schedule.php
-Displays the schedule for the team.
+### Deployment
 
-### styles.css
-CSS file for all formatting.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### videos.php
-Login landing page shows videos of players.
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
